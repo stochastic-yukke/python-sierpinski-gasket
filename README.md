@@ -1,0 +1,2 @@
+# python-sierpinski-gasket
+数学研究部で書いた部誌を公開したリポジトリ sukenbushi2025 に関係した，シェルピンスキのギャスケットを表示するPythonプログラムを公開します。
