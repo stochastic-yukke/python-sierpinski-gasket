@@ -12,11 +12,11 @@ def pascal_mod2_triangle(rows):
         triangle[n, 0] = 1
         triangle[n, n] = 1
         for k in range(1, n):
-            triangle[n, k] = (triangle[n-1, k-1] ^ triangle[n-1, k])  # XOR = mod 2
+            triangle[n, k] = (triangle[n-1, k-1] ^ triangle[n-1, k])
     return triangle
 
 # -------------------------
-# 方法2: 桁ごとLucas
+# 方法2: 桁ごとにLucas
 # -------------------------
 def binomial_odd_lucas(n: int, k: int) -> int:
     while n > 0 or k > 0:

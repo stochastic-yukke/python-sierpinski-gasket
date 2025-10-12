@@ -24,5 +24,5 @@ fig = plot_sierpinski_lucas(256)
 plt.show()
 
 
-print(is_binom_odd(5,2))
-print(1&0,0&1,1&1,0&0,5&2)#110010/101&010論理積
+#print(is_binom_odd(5,2))
+#print(1&0,0&1,1&1,0&0,5&2)#110010/101&010論理積

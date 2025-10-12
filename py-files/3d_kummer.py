@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 def binomial_p_adic_val(n, k, p):
-    """Kummer's theorem: count carries in base-p subtraction"""
     count = 0
     while n > 0 or k > 0:
         if k % p > n % p:
