@@ -3,10 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def binomial_p_adic_val(n, k, p):
-    """
-    Return the p-adic valuation v_p( C(n, k) ) using Kummer's theorem:
-    count the number of carries in base-p subtraction of k from n
-    """
     count = 0
     while n > 0 or k > 0:
         n_i = n % p
@@ -20,7 +16,7 @@ def binomial_p_adic_val(n, k, p):
 def generate_kummer_lucas_array(rows=128, p=3):
     arr = np.zeros((rows, rows), dtype=int)
     for n in range(rows):
-        for k in range(n + 1):  # Pascal triangle: k <= n
+        for k in range(n + 1):
             v = binomial_p_adic_val(n, k, p)
             arr[n, k] = v
     return arr

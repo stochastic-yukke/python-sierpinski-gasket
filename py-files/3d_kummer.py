@@ -29,8 +29,8 @@ def plot_kummer_lucas_3d(rows=64, p=2, cmap='plasma'):
 
     ax.set_xlabel("n")
     ax.set_ylabel("k")
-    ax.set_zlabel(f"v_p(binomial(n,k)), p={p}")
-    ax.set_title(f"Kummer-Lucas Fractal in 3D (mod {p})")
+    ax.set_zlabel(f"p-adic valuation of nCk, p={p}")
+    ax.set_title(f"Sierpinski-Gasket in 3D (mod {p})")
 
     fig.colorbar(surf, shrink=0.5, aspect=8)
     return fig
